@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tp4</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body style="height: 550px; width: 1200px; border: solid gray;">
+    <span class="vertical-line"></span>
+    <div style="margin-left: 800px; position: relative;bottom: 400px;">
+                    <div class="card-header">
+                        <h4>Ajouter un contact</h4>
+                    </div>
+                        <table>
+                            <tr>
+                                <td>
+                        <form autocomplete="off" onsubmit="onFormSubmit()">
+                        <div>
+                            <label for="">Nom</label><br>
+                            <input type="text" name="nom" id="nom">
+                        </div>
+                        <div  style="position: relative; left: 180px; bottom: 39px;">
+                            <label for="">Prenom</label><br>
+                            <input type="text" name="prenom" id="prenom">
+                        </div>
+                        <div style="position: relative;bottom: 15px;">
+                            <label for="">Pays</label><br>
+                            <input type="text" name="pays" id="pays" placeholder="choisissez un pays">
+                        </div>
+                        <div style="position: relative; left: 180px; bottom: 54px;">
+                            <label for="">Genre</label><br>
+                            <input type="text" name="genre" id="genre">
+                        </div>
+                        <div  style="position: relative;bottom: 25px;">
+                            <label for="">Email</label><br>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div  style="position: relative; left: 180px; bottom: 64px;">
+                            <label for="">Telephone</label><br>
+                            <input type="tel" name="telephone" id="telephone">
+                        </div>
+                        <div style="position: relative;bottom: 35px;">
+                            <label for="">Date</label><br>
+                            <input type="date" name="date" id="date">
+                        </div>
+                        <div class="btn">
+                           <button class="btn btn-primary" type="submit" style="background-color: royalblue;border-radius: 5px;color: white;">Ajouter ce contact</button>
+                           <button class="btn btn-danger" type="reset" style="position: relative; bottom: 20px;left: 150px;background-color: gray;border-radius: 5px;color: white;">Annuler</button>
+                        </div>
+                        </form>
+
+                        <td style="position: relative; right: 1050px; bottom: 250px; ">
+                            <table class="list" id="storeList">
+                                <thead>
+                                    <tr style="text-indent: 30px; margin-left: 5px;">
+                                        <th>Nom</th>
+                                        <th>Prenom</th>
+                                        <th>Pays</th>
+                                        <th>Genre</th>
+                                        <th>Email</th>
+                                        <th>Telephone</th>
+                                        <th>Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </td>
+                    </td>
+                    </tr>
+            </table>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>

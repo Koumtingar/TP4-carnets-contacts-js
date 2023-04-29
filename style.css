@@ -1,0 +1,18 @@
+.vertical-line{
+    border-left: 2px solid #000;
+    display: inline-block;
+    height: 500px;
+    position: relative;
+    top: 20px;
+    margin-left: 780px;
+}
+table{
+    width: 80%;
+    margin: 40px auto;
+}
+td{
+    border: 1px solid rgba(204, 200, 200,);
+    text-align: left;
+    padding: 8px 15px;
+}
+
